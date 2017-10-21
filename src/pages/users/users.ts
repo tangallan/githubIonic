@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import { UserDetailsPage } from '../user-details/user-details';
+
 import { GithubUsers } from '../../providers/github-users/github-users';
 import { User } from '../../models/user';
 
@@ -30,4 +32,7 @@ export class UsersPage {
     console.log('ionViewDidLoad UsersPage');
   }
 
+  goToDetails(login: string) {
+    this.navCtrl.push(UserDetailsPage, {login});
+  }
 }

@@ -8,6 +8,7 @@ import { MyApp } from './app.component';
 // import { ItemDetailsPage } from '../pages/item-details/item-details';
 // import { ListPage } from '../pages/list/list';
 import { UsersPage } from '../pages/users/users';
+import { UserDetailsPage } from '../pages/user-details/user-details';
 import { ReposPage } from '../pages/repos/repos';
 import { OrganisationsPage } from '../pages/organisations/organisations';
 
@@ -23,7 +24,8 @@ import { GithubUsers } from '../providers/github-users/github-users';
     // ListPage,
     UsersPage,
     ReposPage,
-    OrganisationsPage
+    OrganisationsPage,
+    UserDetailsPage
   ],
   imports: [
     BrowserModule,
@@ -38,7 +40,8 @@ import { GithubUsers } from '../providers/github-users/github-users';
     // ListPage
     UsersPage,
     ReposPage,
-    OrganisationsPage
+    OrganisationsPage,
+    UserDetailsPage
   ],
   providers: [
     StatusBar,
